@@ -18,10 +18,12 @@ def EnviarMensagem (tipo):
 
     time.sleep (4)
     pa.click (x=628, y=731)
-    if tipo == "pc":
+    
+    if tipo == "pc": #No meu computador há automatização da Rewards de Pc, mas ela não funciona como desejado
         pa.write ("Rewards do Pc acabou aqui")
     elif tipo == "web":
         pa.write ("Concluído Rewards da Web")
+        
     pa.press ('ENTER')
     time.sleep (10)
     pa.hotkey ("alt", "f4")
