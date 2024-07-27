@@ -1,6 +1,8 @@
 import pyautogui as pa
 import time
 
+#Este código só funcionará caso tiver instalado no pc o WhatsApp
+
 def EnviarMensagem (tipo):
     pa.click (x=1335, y=59)
     time.sleep (2)
@@ -10,7 +12,7 @@ def EnviarMensagem (tipo):
 
     time.sleep (15)
     pa.click (x=184, y=117)
-    pa.write ('meu')
+    pa.write ('meu numero')
     time.sleep (4)
     pa.click (x=199, y=173)
 
